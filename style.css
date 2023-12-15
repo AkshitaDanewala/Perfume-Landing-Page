@@ -15,7 +15,7 @@ html,body{
 nav{
     height: 10vh;
     width: 100%;
-    background-color: cyan;
+    /* background-color: cyan; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,17 +23,17 @@ nav{
 }
 ul{
     height: 9vh;
-    width: 25vw;
+    width: 26vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 li{
     font-size: 1.3vmax;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 1.3vmax;
+    margin: 0 1.4vmax;
     list-style: none;
     border-bottom: 2px dashed black;
 }
@@ -51,8 +51,8 @@ nav >h2{
 
 .icons{
     height: 6vh;
-    width: 15vw;
-    border: 2px solid black;
+    width: 13vw;
+    /* border: 2px solid black; */
     box-shadow:  0 0 10px grey;
     display: flex;
     align-items: center;
@@ -60,10 +60,29 @@ nav >h2{
 }
 
 .icons >a{
-    font-size: 1.6vmax;
-    margin: 0 1vmax;
+    font-size: 1.8vmax;
+    margin: 0 0.6vmax;
     color: black;
     text-decoration: none;
+}
+.ri-instagram-fill:hover{
+    color: rgb(243, 36, 139);
+    cursor: pointer;
+}
+.ri-facebook-fill:hover{
+    color: blue;
+    cursor: pointer;
+
+}
+.ri-youtube-fill:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.ri-whatsapp-fill:hover{
+    color: rgb(6, 141, 71);
+    cursor: pointer;
+
 }
 
 .container{
@@ -75,11 +94,120 @@ nav >h2{
 .container-left{
     height: 100%;
     width: 50%;
-    background-color: yellow;
+    /* background-color: yellow; */
+    padding: 2vmax 2vmax;
+}
+
+.container-left >h1{
+font-size: 5vmax;
+font-family: Arial, Helvetica, sans-serif;
+-webkit-text-stroke-width: 3px;
+-webkit-text-fill-color: transparent;
+}
+
+.container-left >h2{
+font-size: 4vmax;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 2vmax;
+}
+
+.container-left >p{
+font-size: 1.2vmax;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 1vmax;
+line-height: 1.7vmax;
+
+}
+
+button{
+    padding: 0.7vmax 3vmax;
+    font-size: 1.2vmax;
+    margin-top: 2vmax;
+    font-weight: bold;
+    border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    transition: all ease 1s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    
 }
 
 .container-right{
     height: 100%;
     width: 50%;
-    background-color: green;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-right-shape{
+    height: 46vh;
+    width: 23vw;
+    border-bottom-right-radius: 7vmax;
+    border-top-left-radius: 7vmax;
+    background-image: url("https://images.unsplash.com/photo-1610461888750-10bfc601b874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcmZ1bWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px grey;
+    transition: all ease 1s;
+    margin-top: 0.8vmax;
+}
+
+.container-right-shape:hover{
+    background-image: url("https://images.unsplash.com/photo-1622618991746-fe6004db3a47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcmZ1bWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.container-right-content{
+    height: 35vh;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-radius: 0.4vmax;
+}
+
+.box{
+    height: 32vh;
+    width: 13vw;
+    border: 2px solid black;
+    border-radius: 1vmax;
+    text-align: center;
+}
+.box>h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-top: 1.8vmax;
+}
+
+#box1{
+    background-image: url("https://images.unsplash.com/photo-1599342166997-58552e91d9f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcmZ1bWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box2{
+    background-image: url("https://images.unsplash.com/photo-1541108564883-bec8126021f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box3{
+    background-image: url("https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
